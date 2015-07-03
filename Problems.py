@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 '''
-#, 'Pr'oblem 1:
+#, 'Problem 1:
 a = 7889826
 b = 2927881
 result = a + b
@@ -64,7 +64,8 @@ for x in range(0, len(arr), 1):
 print(rst)
 '''
 
-'''May 13th 2015
+'''
+May 13th 2015
 # Problem 4
 
 25
