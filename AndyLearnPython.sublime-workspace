@@ -1,0 +1,533 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"init",
+				"init_index"
+			],
+			[
+				"initial",
+				"initial_arr"
+			],
+			[
+				"parse",
+				"parse_sentence"
+			],
+			[
+				"nxt",
+				"next_word"
+			],
+			[
+				"next",
+				"next_word"
+			],
+			[
+				"ne",
+				"next_word"
+			],
+			[
+				"word",
+				"word_list"
+			],
+			[
+				"wo",
+				"word_list"
+			],
+			[
+				"WOR",
+				"WORD_TYPES"
+			],
+			[
+				"current",
+				"current_map"
+			],
+			[
+				"curre",
+				"current_map"
+			],
+			[
+				"curr",
+				"current_map"
+			],
+			[
+				"e",
+				"e_starting"
+			],
+			[
+				"start",
+				"start_map"
+			],
+			[
+				"e_start",
+				"e_starting_map"
+			],
+			[
+				"scene",
+				"scene_name"
+			],
+			[
+				"escap",
+				"escape_pod"
+			],
+			[
+				"las",
+				"laser_weapon_armory"
+			],
+			[
+				"central",
+				"central_corridor"
+			],
+			[
+				"ran",
+				"randint"
+			],
+			[
+				"a_",
+				"a_map"
+			],
+			[
+				"cth",
+				"cthulhu_room"
+			],
+			[
+				"gold",
+				"gold_room"
+			],
+			[
+				"bear",
+				"bear_moved"
+			],
+			[
+				"how",
+				"how_much"
+			],
+			[
+				"in",
+				"insanity"
+			],
+			[
+				"star",
+				"start_point"
+			],
+			[
+				"file",
+				"file_again"
+			],
+			[
+				"arr",
+				"arrtest"
+			],
+			[
+				"p",
+				"Principle"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"left",
+				"margin-left"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"audio",
+				"audioDoe"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssjavs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssjv",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssj",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"fz	",
+				"SublimeZilla: Import FileZilla Server"
+			],
+			[
+				"fz",
+				"SublimeZilla: Import FileZilla Server"
+			],
+			[
+				"package control:remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:add",
+				"Package Control: Add Repository"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package c		",
+				"Package Control: Add Channel"
+			],
+			[
+				"package control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 383.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/Problems.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex48/skeleton/ex48/parser.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex48/skeleton/andy.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex48/skeleton/tests/lexicon_tests.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex48/skeleton/tests/parser_tests.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex48/skeleton/ex48/testAndy.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex48/skeleton/ex48/lexicon.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex47/skeleton/tests/ex47_tests.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex47/game.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex47/skeleton/tests/ex47_tests.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex47projects/game.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex47projects/skeleton/tests/__init__.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex47projects/skeleton/tests/NAME_tests.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex47projects/skeleton/setup.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/projects/skeleton/Name/__init__.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/projects/skeleton/tests/NAME_tests.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/projects/skeleton/tests/__init__.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/projects/skeleton/setup.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/WelcomePage.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex45Andy.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex39.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex43.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex44.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/oop_test.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex31.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex43Skeleton.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex43Andy.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex40.py",
+		"/C/Users/andy.yao/Dropbox/CodeAbbey/learnPython/ex42.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex35.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex33.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex31.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex26.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex17.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex24.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex25.py",
+		"/Users/jason/Dropbox/CodeAbbey/learnPython/ex25Funs.py",
+		"/Users/jason/Desktop/andyPY/ex15.py",
+		"/Users/jason/Desktop/andyPY/ex15_sample.txt",
+		"/Users/jason/Desktop/andyPY/ex14.py",
+		"/Users/jason/Desktop/andyPY/ex13.py",
+		"/Users/jason/Desktop/andyPY/ex12.py",
+		"/Users/jason/Desktop/andyPY/ex11.py",
+		"/Users/jason/Desktop/andyPY/AndyLearningPythonTheHardWay.sublime-workspace",
+		"/Users/jason/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jason/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jason/Desktop/andyPY/AndyLearningPythonTheHardWay.sublime-project",
+		"/Users/jason/Desktop/andyPY/ex9.py",
+		"/Users/jason/Desktop/andyPY/ex6.py",
+		"/Users/jason/Desktop/andyPY/ex5.py",
+		"/Users/jason/Desktop/andyPY/ex3.py",
+		"/Users/jason/Desktop/test.py",
+		"/Users/jason/Desktop/Webpage Records/YoutubeAPI2/athelete.json",
+		"/Users/jason/Desktop/test.js",
+		"/Users/jason/Downloads/demo/js/jquery-1.9.1.min.js",
+		"/Users/jason/Desktop/Webpage Records/IndexPage/index.html",
+		"/Users/jason/Desktop/Webpage Records/Lists/List.html",
+		"/Users/jason/Desktop/Webpage Records/Lists/List.css",
+		"/Users/jason/Desktop/Webpage Records/Lists/List.js",
+		"/Users/jason/Desktop/Webpage Records/InterestCalculator/InterestCalc.html",
+		"/Users/jason/Desktop/Webpage Records/InterestCalculator/ICalc.css",
+		"/Users/jason/Desktop/Webpage Records/InterestCalculator/ICalc.js",
+		"/Users/jason/Downloads/lahman-sql_2013-12-10/lahman2013_tables.sql",
+		"/Users/jason/Desktop/Harry Moreno   Demo.html",
+		"/Users/jason/Desktop/Webpage Records/PhotoScroller/PhotoScroller.html",
+		"/Users/jason/Desktop/Webpage Records/PhotoScroller/PhotoScroller.js",
+		"/Users/jason/Desktop/Webpage Records/ToDoList/ToDo.js",
+		"/Users/jason/Desktop/Webpage Records/ToDoList/ToDoList.html",
+		"/Users/jason/Desktop/Webpage Records/ToDoList/ToDoStyle.css",
+		"/Users/jason/Desktop/Webpage Records/ToDoList/ToDo.jquery",
+		"/Users/jason/Desktop/Webpage Records/RandomBackground/RandomBackground",
+		"/Users/jason/Desktop/Webpage Records/RandomBackground/StyleRandom.css",
+		"/Users/jason/Desktop/Webpage Records/RandomBackground/jsRandom.js",
+		"/Users/jason/Desktop/Webpage Records/MakeJingles/clickIconMakeJIngleCSS.css",
+		"/Users/jason/Desktop/Webpage Records/clickIconMakeJIngleCSS",
+		"/Users/jason/Desktop/Webpage Records/clickJingleJQuery.js",
+		"/Users/jason/Desktop/Webpage Records/clickJingleJQuery",
+		"/Users/jason/Downloads/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/jason/Dropbox/CodeAbbey/learnPython/ex47projects",
+			"ex35.py",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" ",
+			"1",
+			"index_sort",
+			"	",
+			"NAME",
+			"x =",
+			"x",
+			"play(",
+			"given_",
+			"\"\"\"",
+			"'''",
+			"print",
+			"raw_input",
+			"print",
+			"raw_input",
+			"print(",
+			"print",
+			"	",
+			"input",
+			"	",
+			"print w",
+			"print",
+			"exit",
+			"hot_exit",
+			" ",
+			"	",
+			"],",
+			",",
+			", ",
+			"],\n",
+			",",
+			" ",
+			"I'm ",
+			"console.log",
+			"\")",
+			"                     }",
+			"\")\n",
+			"; break;",
+			"console.log",
+			"\"};",
+			"BirthdayYear",
+			".getTime(){",
+			".getTime()",
+			"</",
+			"List.",
+			"Clock",
+			"ToDoStyle.",
+			"b.",
+			"PhotoScroller",
+			"css",
+			"left",
+			"});\n",
+			";\n",
+			"%;\n",
+			"}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"AndyLearningPythonTheHardWay.sublime-workspace"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true
+}
