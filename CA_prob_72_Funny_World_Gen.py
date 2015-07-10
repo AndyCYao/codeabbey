@@ -7,12 +7,12 @@ def lcg(a, c, m, x0):
     return x0
 
 
-def funny_word(strnums):
+def funny_word(strnums, initial):
     cons = "bcdfghjklmnprstvwxz"
     vows = "aeiou"
     let = ""
-    # txt = []
-    rand = lcg(445, 700001, 2097152, 0)
+    txt = []
+    rand = lcg(445, 700001, 2097152, initial)
     letters = map(int, strnums.split())
     for l in letters:
         for i in range(0, l):
@@ -22,12 +22,13 @@ def funny_word(strnums):
             else:
                 let = cons[rand % 19]
             rand = lcg(445, 700001, 2097152, rand)
-            print("i is %d , let is %r" % (i, let))
-    # return(txt)
+            txt.append(let)
+        txt.append(" ")
+    return(txt)
 
-print(funny_word("4 5 6"))
+Test_STR = "3 3 4 3 3 7 4 7 4 8 8 5 4 8 4 6 7 5 3"
 
-'''
-ARR_STR = ["3 0",
-           "4 5 6"]
-'''
+print("".join(funny_word(Test_STR, 729844)))
+
+
+
