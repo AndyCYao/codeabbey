@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 '''
-# Problem 1:
+#, 'Problem 1:
 a = 7889826
 b = 2927881
 result = a + b
@@ -64,7 +64,8 @@ for x in range(0, len(arr), 1):
 print(rst)
 '''
 
-'''May 13th 2015
+'''
+May 13th 2015
 # Problem 4
 
 25
@@ -1422,42 +1423,30 @@ for l in ARR_Num:
     print(find_type(l[0], l[1], l[2]), end=" ")
 
 '''
+'''
 # Problem 81 Bit Count
 # learnt zero fill "zfill". which fill the string with 0 up to argument length
 # ARR_Num = [1, 100, -1]
 
-'''
-ARR_Num = [-6, 100722523, -4992487, 1451065918, -108806452, 1993964975, 3835840, 1439755338,
-647507, 167, -361844, 198, -13776, -1259, -8659, 84, 20326254, 2011940, -1450177,
-190440, 106754330, -13056, -19782, 4652359, -122357752, 16095, -1249588077, -5959497,
--175, -851842752, -491493440, 1242519560, -1, -159962251, 116, -1869385256, 174, 113255,
-1505675366, 150, -1285, -1220403808, -129, -85399, 12]
-'''
-'''
-the expected answers for the above list 
-30 13 20 17 19 22 10 15 10 5 22 4 22 26 26 3 14 11 26 11 14 21 25 14 15 12 15 19 27 15 15 11 32 21 4 14 5 11 17 4 29 14 31 23 2
-'''
-'''
-ARR_Num = [-18, 2, 803249, 15034, 7250, -44944377, 6253611, -12453, 18949, -184210, -18439061, -45746, -119967, 19,
-           -623277, 332034, -1758, -4333656, 1233749, 323460104, 185, 992, 1884315, -22, -12521979, 54670, 116947,
-           67630044, 193146767, 17902823, 153758, 807, 0, -60664, -5982543, 11081, 20, 196349534, 16412745, 1129,
-           268865075, 90468, -1082226, -1168, 15567325, 3722, -779, -53620680, -753977, -63091, 526, 16, -853, 16067,
-           1548335979, -26835, 867425, -51502077, -19]
 
+ARR_Num = [48944219, -84799645, 0, 464067, -152497, -9, -19323, 1237872208, 1302855468, 1203884,
+           -81643, 794951, 945, 101486290, 1039, 110569, -182292212, -17748, 15993, -906844350,
+           19130, -1176016459, 1758004, -1725, -385, 1334227081, -9, -172, -45185928, 443, -1160,
+           -1091440, 3228, 936605, 1396852122, 12285361, 134, -16490, 1407750, -1914430, -3,
+           15995, -3892, 1687, -1594020453, 114919387, -14582, -34383, 15810, 76889, 8144112,
+           16304912, 39, 8603713, 75691977]
 
-
+           
 def find_binary(num):
-    #  returns a binary STRING
+    #  returns a binary STRING 
     rst = is_even(num)
-
-    if num != 0: # if 0 then don't even do divide by 2. just skip
-        while abs(int(num)) != 1:
-            num /= 2
-            rst = rst + is_even(int(num))
+    while abs(int(num)) != 1 or num != 0:
+        num /= 2
+        rst = rst + is_even(int(num))
 
     pos_rst = rst[::-1].zfill(32)
     # if value is negative, then need to invert otherwise just return
-    if num >= 0:
+    if num > 0:
         return pos_rst
     else:
         # neg_rst = ''.join(["1" if pos_rst[x] == "0" else "0" for x in range(len(pos_rst))])
@@ -1500,53 +1489,627 @@ def is_even(num):
         else:
             return "1"
 
+
 for num in ARR_Num:
-    print(find_binary(num).count('1'), end= " ")
+    print(find_binary(num).count('1'), end=" ")
 
 
-# print(find_binary(-4992487))
+# print(find_binary(48944219))
 
 # print("Computer Version Below")
-# print(bin(-4992487)[2:].zfill(32))
+# print(bin(48944219)[2:].zfill(32))
 
+# print(ARR_Num[2] != 0)
 '''
+'''
+# Problem 31 Rotate String
 
-# Problem 18 Square Root Jun 21 2015
-
-
-def heron_method(v ,step):
-    r = 1
-    d = float(v / r)
-    val = float(abs(r - d))
-    # print("initial r is %r, d is %r, val is %d" %(r, d, val))
-    counter = 1
-    
-    while counter <= step:
-        d = float(v / r)
-        r = float((r + d) / 2)
-        
-        val = float(abs(r - d))
-        # print("#%d r is %r, d is %r, val is %d" %(counter, r, d, val))
-        counter += 1
-    return r
+ARR_Num = [[-3, 'ixxomloqxsqoquezu'],
+           [-4, 'enzfauchfqodifru'],
+           [1, 'iyvwpkuigyvludeb'],
+           [3, 'miuaceytrqaxyymp'],
+           [2, 'yecnjirnavhebgzo'],
+           [-8, 'uileaeentmeweczslydzzzae'],
+           [4, 'wqornxekxchewuinzkglvyp'],
+           [7, 'pwdxnzhulutjyllhpb'],
+           [-1, 'udwazvqinzxduprwwnbl'],
+           [-5, 'mwsuyovhcyedsstaym'],
+           [5, 'buyybbedmpqcbnapcc']]
 
 
-# print(heron_method(5, 1))
-
-ARR_Num = [[989, 13],
-           [49638, 1],
-           [915, 7],
-           [857, 8],
-           [58135, 3],
-           [4501, 13],
-           [14, 4],
-           [438, 7],
-           [804, 6],
-           [52, 9],
-           [86, 9],
-           [82, 2],
-           [23, 1]]
+def rotate(num, ostr):
+    # print(ostr[num:])
+    # print(ostr[:num])
+    ostr = ostr[num:] + ostr[:num]
+    return ostr
 
 
 for a, b in ARR_Num:
-    print(heron_method(a, b), end = " ")
+    print(rotate(a, b), end=" ")
+    # rotate(a, b)
+
+'''
+'''
+# Problem 61 Prime number genetrating. Jun 22nd 2015.
+
+
+def is_prime(num):
+    # this works because no factors would be greater than sqrt of a number
+    # ie. 100 = 2 * 50, 4 * 25 , 5 * 20, 10 * 10, 20 * 5, etc. it just flips after the 10 * 10
+    # we start the increment at 3 and increment by + 2 because we don't need to check for even numbers.
+    if num == 1:
+        return False
+    elif num == 2:
+        return True
+
+    if num % 2 == 0:
+        return False
+
+    for a in range(3, int(num ** .5) + 1, 2):
+        # print("currently %r divide by %r" % (num, a))
+        if num % a == 0:
+            return False
+
+    return True
+
+
+def create_prime_list(upto):
+    lst_primes = []
+    i = 0
+    x = 0
+    while x < upto:
+        if is_prime(i):
+            lst_primes.append(i)
+            x += 1
+        i += 1
+
+    return lst_primes
+
+
+ARR_CHECK = [188827, 118138, 180664, 192293, 101567, 151979, 105637, 103051, 165949, 183738, 138094, 175639]
+
+
+lst = create_prime_list(200000)
+
+for a in ARR_CHECK:
+    print(lst[a - 1], end= " ")
+'''
+'''
+# Problem 55 Jun 23rd 2015 Open Sesame Matching word
+
+strInput = "gyk dak meq zeq rit gyc rik bac nox let dak noq vok jas bis jit duc bok boh dus bys met ruc beh deq nyk vyt byt vas lys lef bak lih juq myx ris maq rat joc nyt mak boc baf beq zox liq zaf moq buq rus dif rep vok lyf ris lax max mes ruq vos nyp jyf jox noh vus boc niq vut bec mik mah mys jax lak vus dic goq zek dec zif loh bep zuh luf guf nec jap roc rix zoq reh dik voh rif veq zap zec nip duf daf beh muh vyt dof bop rix rif vep miq mip gos rit geh vec jat jef zoh lap gac gaq zys vyc bik gat mak jof zoq gyp laq res nyf maq lef zec mef gof zuf bak rux nuh myk rek gaq nek bux goc gex las rix duh jeh dyt gih lex zok gef roh dus gyq ryf viq bip ryk zoh zek bus lyk daq moh vyh vac joq mik muf lep dah buk ryh map ruf zyq luq nof nef meq lyt loh zox jok zak luk doc jit gyk lak ves ryt guc lac rus gef bex jyh zof res dat neq jec naf vef das byf nyt zeq dyt lyq vis zik gef vis gix jof baf rik lux bys jyk bah jek gus ryt gek bik bop noq doh but dos nuf mus zeq nyf vih lut jas mac muc dut luk bep muk zoc gak luc nih dop joc raf gok rik meh lyf rix jef gis rek byk laf baq gek bac vys guh goh rox joc dih juk zit zof byq vyh gaf nuk gyt zek zaq bax gyk nik dos nuk myc nys jaq myk max zuf muc bos lox gup end"
+# ARR_Str1 = ["nun", "lam", "mip", 'tex', 'bal', 'pif', 'sot', 'bal', 'bod', 'tex', 'end']
+
+ARR_Str = sorted(strInput.split())
+
+cnt = {}
+
+for wrd in ARR_Str:
+    if cnt.get(wrd):
+        i = cnt[wrd]
+        cnt[wrd] = i + 1
+    else:
+        cnt[wrd] = 1
+
+print(cnt)
+
+arrDup = []
+for k in cnt:
+    if cnt[k] > 1:
+        arrDup.append(k)
+
+print(" ".join(sorted(arrDup)))
+'''
+'''
+# Problem 43 Jun 23rd 2015 Dice Rolling
+
+ARR_Num = [0.315889522433,
+           0.848298272584,
+           0.515758616384,
+           0.850301770493,
+           0.358935474418,
+           0.201700994279,
+           0.649438299704,
+           0.848568463698,
+           0.735433819704,
+           0.842166923452,
+           0.9034148762,
+           0.175489639863,
+           0.491338405758,
+           0.861801429652,
+           0.98244501045,
+           0.350637868047,
+           0.353577795438,
+           0.223900842015,
+           0.932562967762,
+           0.855692788959,
+           0.707712941337,
+           0.000517529435456,
+           0.666845435277,
+           0.47800080711,
+           0.308470293414,
+           0.287439228967,
+           0.721467631403,
+           0.674912546296,
+           0.469472705852,
+           0.689005915541]
+
+
+def convert_to_dice(num):
+    rst = num * 6 + 1
+    return int(rst)
+
+# ARR_Num = INPUT.split()
+
+for n in ARR_Num:
+    print(convert_to_dice(n), end=" ")
+
+'''
+'''
+# Problem 47 Ceasar Shift Cipher jun 24th 2015
+
+ARR_Str = ["YHQL YLGL YLFL.",
+           "HYHQ BRX EUXWXV."]
+
+ARR_Str1 = ["USJLZSYW EMKL TW VWKLJGQWV.",
+            "LG MK AF GDVWF KLGJAWK DWL ZAE LZJGO LZW XAJKL KLGFW.",
+            "LZW GFUW SFV XMLMJW CAFY AF SFUAWFL HWJKAS LZWJW OSK S CAFY S FAYZL SL LZW GHWJS.",
+            "XGMJ KUGJW SFV KWNWF QWSJK SYG SFV KG QGM LGG TJMLMK SJW OGFVWJK ESFQ LGDV.",
+            "LZW VWSV TMJQ LZWAJ GOF VWSV DGNWKL LZGM EW HWLWJ.",
+            "USDDWV AL LZW JAKAFY KMF SFV XGJYANW MK GMJ VWTLK."]
+
+
+def cipher2(k):
+    dict = {}
+    for a in range(65, 91, 1):
+        sh = a + k
+        if sh > 90:
+            sh = 65 + (sh - 91)
+        dict[chr(a)] = chr(sh)
+
+    return dict
+
+
+ref = cipher2(18)
+inv_ref = {v: k for k, v in ref.items()}
+
+# print(ref)
+# print(inv_ref)
+for wrd in ARR_Str1:
+    fulltxt = ""
+    for i in range(len(wrd)):
+        txt = wrd[i]
+        if inv_ref.get(txt):
+            fulltxt += inv_ref.get(txt)
+        else:
+            fulltxt += txt
+    print(fulltxt, end=" ")
+'''
+'''
+# Problem 104 Triangle Area Jun 25th 2015
+
+
+def distance(x1, y1, x2, y2, x3, y3):
+    a = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** .5
+    b = ((x3 - x2) ** 2 + (y3 - y2) ** 2) ** .5
+    c = ((x1 - x3) ** 2 + (y1 - y3) ** 2) ** .5
+    return abs(a), abs(b), abs(c)
+
+
+def heron_method(a, b, c):
+    s = (a + b + c) / 2
+    area = (s * (s - a) * (s - b) * (s - c)) ** .5
+    return round(area, 2)
+
+
+ARR_Num = [[1, 3, 9, 5, 6, 0],
+           [1, 0, 0, 1, 10000, 10000],
+           [7886, 5954, 9953, 2425, 6250, 2108]]
+
+
+ARR_Num1 = [[831, 4476, 4943, 6605, 1619, 5451],
+            [9317, 2295, 6621, 380, 1504, 7623],
+            [977, 1414, 3808, 9305, 1228, 9983],
+            [3487, 4485, 1434, 6625, 8169, 3464],
+            [9672, 1380, 3248, 3208, 504, 3847],
+            [1957, 1334, 8323, 6900, 7939, 9941],
+            [2351, 7256, 2236, 8972, 7635, 3740],
+            [6594, 8612, 5154, 401, 7916, 6381],
+            [384, 1403, 866, 1817, 8027, 9035],
+            [5280, 7699, 414, 8528, 907, 917],
+            [2375, 2864, 2251, 697, 9763, 190],
+            [638, 2113, 7445, 2874, 1084, 5079],
+            [6613, 7678, 3691, 1766, 8078, 1606],
+            [8147, 8462, 3009, 9012, 279, 1035],
+            [8047, 5558, 8734, 8460, 4086, 9640],
+            [9377, 6461, 2503, 1627, 7157, 2265],
+            [1816, 7795, 4378, 9261, 668, 5462]]
+
+for num in ARR_Num1:
+    a, b, c = distance(num[0], num[1], num[2], num[3], num[4], num[5])
+    print(heron_method(a, b, c), end=" ")
+
+'''
+'''
+# Problem 49 Rock paper scissor June 25th 2015
+
+
+ARR_Str = [['SS', 'PR'],
+           ['PR', 'RS', 'PS', 'PP', 'SP'],
+           ['PS', 'RR', 'PS', 'RP']]
+
+
+ARR_Str1 = ["SP PR PS RS PP SR PP SS RP SR PS RS SS RR RS RS",
+            "PS PP RR SP RR SS SS SR SR",
+            "SR SP RS SR PS RS PR RR RP SP SR PP RP",
+            "RR PR SS SP SP RR RR RS",
+            "PS SP PS RR SS PS RS RP PR PR SS SP",
+            "RP SR RS PR PR PR RS RR RR RR RS",
+            "PR PP SP SS PP SS PP PS SP PR",
+            "RR SP PR PP SS RR PP RR RS PS SP RR SR RR SR SS PS RS",
+            "PP SP SS SR SS PS PR PR PP SS SR PR RR SS PS SR RP",
+            "RP PR PP SR RS PR PR RR SR PS RS",
+            "RR RR RP PS PR RS PS PP SP RS SR SS SR",
+            "SP RP SP SS SR RP SP SS SS RP",
+            "PP PP PP PP PS RR RS SP PP PS SS PR SR SP",
+            "RR RP PP RS SP PS SP SP",
+            "PS PS PR SR",
+            "SP PP SP PS RR PP SP SP",
+            "PS RR RS SP SP SP",
+            "PP RS SS PP SS PP RR SS PR PP PP PR PR RR RP SP",
+            "SR SS PR PR PS PS SR PS SS PP RS RP",
+            "RP RR SR SR RP SR",
+            "RS SP PP SS PP SS RS",
+            "RP PP SS PS RR SR SS PS SR",
+            "RS RR SS SP SS PP SS SP PS SP SR PS SR RP",
+            "PR RR PR SP SR RP SS PP SS RP SP RS SR PR",
+            "RS SR RS SR SR RR PS",
+            "PP RR PP SR RR SR RP RP PS RS SS SR",
+            "SP SP RP SS SR RR SR PS RP"]
+
+
+ref = {
+    "PR": 1,
+    "SP": 1,
+    "RS": 1,
+    "RP": 2,
+    "PS": 2,
+    "SR": 2
+}
+
+arr_rst = []
+
+for m in ARR_Str1:
+    rst, a, b = 0, 0, 0
+    new_m = m.split()
+    for rd in new_m:
+        rst = ref.get(rd)
+        if rst == 1:
+            a += 1
+        elif rst == 2:
+            b += 1
+
+    if a > b:
+        arr_rst.append(str(1))
+    else:
+        arr_rst.append(str(2))
+
+print(" ".join(arr_rst))
+
+'''
+'''
+# Problem 44 Double dice roll Jun 26th 2015
+
+ARR_Num = [[193170145, 1912748246],
+           [753156389, 614113621],
+           [1824520917, 53700559],
+           [1288077384, 911939603],
+           [1939066598, 1695763253],
+           [1905581606, 1811712139],
+           [878644967, 1090885451]]
+
+
+ARR_Num1 = [[2114776424, 390532567],
+            [1894336851, 1255409900],
+            [1251905097, 814818228],
+            [102600800, 983392711],
+            [323724311, 1049429234],
+            [1532366842, 64874221],
+            [33760854, 535368472],
+            [1909083189, 1378533842],
+            [599781857, 174763197],
+            [2011590880, 1688796951],
+            [1714644802, 523249490],
+            [1679124517, 1083638082],
+            [1478204680, 189826660],
+            [1588114866, 2131350955],
+            [1084625763, 614027083],
+            [1587032143, 2087094425],
+            [371606494, 1004752539],
+            [1504368566, 489256504],
+            [110496145, 1319878218],
+            [951922252, 521646654],
+            [1034697291, 1160391827],
+            [1883501032, 178123703],
+            [899824509, 2084265506],
+            [276432785, 1605910241],
+            [866409661, 149191229],
+            [1693677087, 1321989975],
+            [1789614333, 432211130],
+            [1579667770, 69083320],
+            [268675092, 78811143],
+            [1442046594, 937079897]]
+
+
+def double_dice(side, dice1, dice2):
+    ans = ((dice1 % side) + 1) + ((dice2 % side) + 1)
+    return ans
+
+
+for a in ARR_Num1:
+    print(double_dice(6, a[0], a[1]), end=" ")
+
+'''
+'''
+# Problem 35 Savings Calculator June 26th 2015
+
+import math
+
+ARR_Num = [[1000, 10000, 8],
+           [50, 100, 25]]
+
+
+ARR_Num1 = [[500, 8500, 5],
+            [10000, 130000, 10],
+            [25, 400, 40],
+            [100, 1400, 20],
+            [1000, 16000, 9],
+            [25, 125, 40],
+            [1000, 7000, 7],
+            [250, 1000, 40],
+            [10000, 170000, 35],
+            [500, 9000, 5],
+            [5000, 45000, 15],
+            [500, 7500, 7],
+            [1000, 10000, 1],
+            [100, 1600, 5],
+            [5000, 95000, 20],
+            [5000, 10000, 30],
+            [10000, 130000, 3],
+            [2500, 32500, 10]]
+
+
+def find_period(a, p, r):
+    # formula is p = a * (1+r/n) ** nt since compound annually n is 1
+    # rearrange to solve for t 
+    # t = log(p/pn) / log(1+r)    
+    r = r * .01
+    t = math.log((p / a), 10) / math.log((1 + r), 10)
+    return t
+
+
+def find_period1(a, p, r):
+    x = 0
+    t = 0
+    r = r * .01
+    while x < p:
+        x = a * (1 + r) ** t
+        t += 1
+        # print(x, t)
+    return t - 1
+
+for num in ARR_Num1:
+    print(find_period1(num[0], num[1], num[2]), end=" ")
+
+'''
+'''
+# PRoblem 25 - Linear Congruential Generator
+# formula is Xnext = (A * Xcur + C) % M
+
+ARR_Num = ["3 7 12 1 2",
+           "2 3 15 8 10"]
+
+ARR_Num1 = ["1977 8 808 224 9",
+            "73 5 86022 48058 14",
+            "35 3795 95 74 16",
+            "729 926 51 2 24",
+            "53 90051 25486 4177 10",
+            "61 2082 4 2 7",
+            "33 7534 4 1 24",
+            "1411 995763 94 89 19",
+            "147 1091 77064 32516 4",
+            "461 1 5994 1602 3",
+            "1663 68550 14 8 22",
+            "1051 49139 818 617 16",
+            "737 24242 2 0 6"]
+
+
+def lcg(a, c, m, x0, n):
+    #  formula is xNext = (A * Xcur + C) % M
+    y = 1
+    while y <= n:
+        x0 = (a * x0 + c) % m
+        # print(x0)
+        y += 1
+    return x0
+
+
+for rst in ARR_Num1:
+    a, c, m, x0, n = map(int, rst.split())
+    print(lcg(a, c, m, x0, n), end=" ")
+
+'''
+'''
+# Problem 58 card names June 29th 2015.
+
+suits = ['Clubs', 'Spades', 'Diamonds', 'Hearts']
+ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
+
+ARR_Num = "28 42 32 36 40 12 14 25 34 17 37 1 15 20 7 10 27 16 3 44"
+lst = ARR_Num.split()
+
+for i in lst:
+    x = int(i)
+    suit_value = int(x / 13)
+    rank_value = x % 13
+    # print(rank_value, suit_value)
+    print("%s-of-%s" % (ranks[rank_value], suits[suit_value]), end=" ")
+'''
+'''
+# Problem 59 Bulls and Cows AKA Mastermind June 29th 2015
+
+guesses = "3570 11 4789 7514 1059 5809 4837 7809 4831 5104 0791 7803 8039"
+lstguesses = guesses.split()
+initial = lstguesses[0]
+lstgueeses = lstguesses[2:]
+
+for guess in lstgueeses:
+
+    ft = 0
+    st = 0
+    for x in range(len(initial)):
+        # First test
+        if initial[x] == guess[x]:
+            ft += 1
+        # Second test
+        if guess[x] in initial and guess[x] != initial[x]:
+            st += 1
+    print("%s-%s" % (ft, st), end=" ")
+
+'''
+'''
+# Problem 128 Combinations Counting
+# formula is n! / k! (n-k)!
+
+
+def factorial(num):
+    if num > 1:
+        num = factorial(num - 1) * num
+    return num
+
+# print(factorial(10))
+
+ARR_Num = ["68 9",
+           "107 100",
+           "70 62",
+           "53 10",
+           "117 7",
+           "72 8",
+           "84 8",
+           "106 7",
+           "110 103"]
+
+
+def findCombos(n, k):
+    # there can only be 1 way of grouping 0 things, so rst is 1
+    if k != 0:
+        rst = factorial(n) / (factorial(k) * factorial(n - k))
+    else:
+        rst = 1
+    return round(rst)
+
+
+for i in ARR_Num:
+    n, k = i.split()
+    # print(n, k)
+    print(findCombos(int(n), int(k)), end=" ")
+    # print(findCombos(int(n), int(k)))
+
+'''
+'''
+# Problem 34 Binary Search July 2nd 2015
+import math
+
+
+def eq(a, b, c, d, minr, maxr):
+    x = (maxr + minr) / 2
+    # eq is A*x + B * sqrt(x ^ 3) - ln( -x / 50) - d
+    rst = (a * x + b * (x ** 3) ** (.5) - c * math.exp(-x / 50) - d)
+    # print("#min %r - max %r - x is %r - rst is %r " % (minr, maxr, x, rst))
+
+    rst = round(rst, 7)
+
+    if rst > 0:
+        return eq(a, b, c, d, minr, x)
+    elif rst < 0:
+        return eq(a, b, c, d, x, maxr)
+    else:
+        return x
+
+# ARR_Num = [[0.59912051, 0.64030348, 263.33721367, 387.92069617],
+#           [15.68387514, 1.26222280, 695.23706506, 698.72384731]]
+
+
+ARR_Num1 = [[3.36053196, 0.62565252, 1685.07533785, 495.45426913],
+            [11.20204114, 0.48430082, 42.70423764, 595.93992196],
+            [5.80600361, 0.51329141, 530.20457762, 43.61353810],
+            [17.13174905, 0.86298390, 65.25741427, 1106.82510435],
+            [3.32781040, 0.92108546, 280.95036199, -78.17720091],
+            [5.68723945, 0.90803596, 602.91931993, 1111.16843012]]
+
+for ls in ARR_Num1:
+    print(eq(ls[0], ls[1], ls[2], ls[3], 0, 100), end=" ")
+'''
+
+# Problem 19 Matching Brackets Jul 1st
+
+ref = {
+    '(': ')',
+    '[': ']',
+    '{': '}',
+    '<': '>'
+}
+
+inv_ref = {v: k for k, v in ref.items()}
+
+
+def check_seq(lst):
+    opened = []
+    for i in range(len(lst)):
+        # print("currently reading %r" % (lst[i]))
+        char = lst[i]
+        if ref.get(char):           # if opened bracket, then append it.
+            opened.append(char)
+        elif inv_ref.get(char):     # if is a close bracket, then check if open already exist. 
+            closed_char = inv_ref.get(char)
+            try:
+                if closed_char == opened[len(opened) - 1]:
+                    opened.pop()
+                else:
+                    return 0
+            except IndexError:
+                return 0
+
+    if len(opened) == 0:
+        return 1
+    else:
+        return 0
+
+ARR_Str = ["(a+[b*c]-{d/3})",
+           "(a + [b * c) - 17]",
+           "(((a * x) + [b] * y) + c",
+           "auf(zlo)men [gy<psy>] four{s}"]
+
+ARR_Str1 = ["<u><{h[+]<->{c}}[d(c)(%)][x]{{%} {d}{ }(e)}>",
+            "{z}(v[%]){({-}e)v}(fu[/]{}( )(g)(u)(g)(z)())",
+            "[{f}]({f}[v(^)[v]{z}]g){[<->*<e></>] }{x}</>(x)",
+            "(<+}%)(t){(y{u{<*>e}}){{w>z}(/)<t>{c[t]}<z[x]>}{+}[^]{[v]w}{+}(g)",
+            "(( ))[ ](^)[[c]{w}[e(%)][/]*{<b>t}<(u){{y}z{+[x]}}*> b>]",
+            "<g>{{{*}[g]> }<+{z({ }<t>u)}}{h}[<<(-)c> (y)<g>>v][u](^<->)",
+             "a>([w{[t]-}](w)<[y]h>h<d>){h}[g]<t>(z(d)){*({c}d<u[e]>)}{}",
+            "[(*){( ){[y]<b><{%}^{h[-]}>g}w}[+(a)](w)({/}%)]",
+            "{z}(f){%[a]}[ ]<{ }>(^(z)[[y[e<d>]<c>][<y><b{b}>u) ][%]<b>]<f><u>",
+            "<+(<w<%>>e)<<x<[-][t]d>><+(a){w(e)<g{v}>}{b}>c >{<x>}",
+            "(g){b(z(/))}{-}(f){f{-}<[g](w){ }u>{+}}[{+}[f]{h}]",
+            "{}{u}}z{[a]-(^)<>(a)[ (h(f[y{[a]%(b)}]))](<t{<b<x>>w}>e)",
+            "[v][(w)/](e)[*][+]([[<e> ]y[[*]u]]){-[a]<h>}",
+            "<{t}d>{u}<v>{{y<v<f>> b<z>}[< >w](){+}{a(*)}<+><z>{t}",
+            "(g){h}(u)(h)<[x]< h}( )v[u]><{^}a><{v}{w}<v><{>{d}d>><t>(u)<u>",
+            "{(h) }({[h<x><x>]<+>y< (z){g(^)}[w]>[v]<c>})",
+            "[f]<a><g><{{y[w](^)}*}[<</><^>f<e>[b]>*][g]{z}<z>><%>(a){[e]d}",
+            "<<^>h>[d]([{ {t}} ]{{c(-)}<[[e]d]f>e}(w[y])[w])(d){ }",
+            "(u[t])[<b>[c] <t>[ct]<(t)<<(a)]<( )<x>z>>z>(u)( )<< >t>>{f}"
+            ]
+
+for ls in ARR_Str1:
+    print(check_seq(ls), end=" ")
