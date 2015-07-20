@@ -1,0 +1,18 @@
+# Problem 37 Mortgage Calculator
+
+# INPUT_DATA1 = [800000, 6, 103]
+INPUT_DATA = [1100000, 8, 126]
+
+def mortgage_calc(info):
+    p = info[0]
+    r = info[1]
+    r_monthly = .01 * r / 12
+    l = info[2]
+    m = 0
+    # print(p, r_monthly, l)
+    #  formula is m = p * (i(1+i)^n) / (1+i)^n - 1
+
+    m = p * (r_monthly * (1 + r_monthly) ** l) / ((1 + r_monthly) ** l - 1)
+    print(round(m))
+
+mortgage_calc(INPUT_DATA)
